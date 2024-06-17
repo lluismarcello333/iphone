@@ -1,6 +1,6 @@
 # iphone - Documentação
 ## Sumário
-1. (Visão Geral)[## visão-geral]
+1. (Visão Geral)[##visão-geral]
 2. Diagrama UML
 3. Estrutura do Projeto
 4. Detalhes das Classes e Interfaces
