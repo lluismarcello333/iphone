@@ -1,12 +1,12 @@
 # iphone - Documentação
 ## Sumário
-1. (Visão Geral)[#visão-geral]
-2. Diagrama UML
-3. Estrutura do Projeto
-4. Detalhes das Classes e Interfaces
-5. Instruções para Compilação e Execução
-6. Exemplo de Uso
-7. Contribuindo
+1. [Visão Geral](#visão-geral)
+2. [Diagrama UML](#diagrama-uml)
+3. [Estrutura do Projeto](#estrutura-do-projeto)
+4. [Detalhes das Classes e Interfaces](#detalhes-das-classes-e-interfaces)
+5. [Instruções para Compilação e Execução](#instruções-para-compilação-e-execução)
+6. [Exemplo de Uso](#exemplo-de-uso)
+7. [Contribuindo](#contribuindo)
 
 ## Visão Geral
 Este projeto simula as funcionalidades básicas de um iPhone, incluindo aplicativos como iPod, Phone, Internet (com suas subcategorias como Email, Navegador, GoogleMaps, Widgets, WiFi), Camera, SMS e Fotos. As classes e interfaces são implementadas em Java e seguem um diagrama UML para organização.
@@ -17,7 +17,7 @@ Este projeto é um desafio proposto pelo bootcamp Santander, baseado no vídeo d
 ![image](https://github.com/lluismarcello333/iphone/assets/98034550/d2f1bad7-639c-47fa-be3e-4e32b1964e27)
 
 ## Estrutura do Projeto
-```
+```java
 iphone-project/
 │
 ├── src/
@@ -45,7 +45,7 @@ iphone-project/
 
 ### Aplicativo,java
 Interface base para todos os aplicativos do iPhone.
-```
+```java
 public interface Aplicativo {
     void abrir();
     void sair();
@@ -53,7 +53,7 @@ public interface Aplicativo {
 ```
 ### iPhone.java
 Classe principal que simula as funcionalidades básicas do iPhone.
-```
+```java
 public class iPhone {
     public void ligar() { ... }
     public void desligar() { ... }
@@ -73,7 +73,7 @@ public class iPhone {
 ```
 ### iPod.java
 Implementa funcionalidades específicas do iPod.
-```
+```java
 public class iPod implements Aplicativo {
     public void abrirListaDeMusica() { ... }
     public void selecionarMusica() { ... }
@@ -91,7 +91,7 @@ public class iPod implements Aplicativo {
 ```
 ### Phone.java
 Implementa funcionalidades específicas do Phone.
-```
+```java
 public class Phone implements Aplicativo {
     public void favoritos() { ... }
     public void recentes() { ... }
@@ -111,7 +111,7 @@ public class Phone implements Aplicativo {
 ```
 ### Internet.java
 Classe base para todas as subcategorias de Internet.
-```
+```java
 public class Internet implements Aplicativo {
     public void abrirEmail() { ... }
     public void abrirNavegador() { ... }
@@ -124,7 +124,7 @@ public class Internet implements Aplicativo {
 ```
 ### Email.java
 Implementa funcionalidades específicas do Email.
-```
+```java
 public class Email implements Aplicativo {
     public void enviarEmail() { ... }
     public void lerEmail() { ... }
@@ -137,7 +137,7 @@ public class Email implements Aplicativo {
 ```
 ### Navegador.java
 Implementa funcionalidades específicas do Navegador.
-```
+```java
 public class Navegador implements Aplicativo {
     public void abrirPagina() { ... }
     public void atualizarPagina() { ... }
@@ -149,7 +149,7 @@ public class Navegador implements Aplicativo {
 ```
 ### GoogleMaps.java
 Implementa funcionalidades específicas do GoogleMaps.
-```
+```java
 public class GoogleMaps implements Aplicativo {
     public void buscarLocal() { ... }
     public void tracaRota() { ... }
@@ -161,7 +161,7 @@ public class GoogleMaps implements Aplicativo {
 ```
 ### Widgets.java
 Implementa funcionalidades específicas dos Widgets.
-```
+```java
 public class Widgets implements Aplicativo {
     public void adicionarWidget() { ... }
     public void removerWidget() { ... }
@@ -173,7 +173,7 @@ public class Widgets implements Aplicativo {
 ```
 ### WiFi.java
 Implementa funcionalidades específicas do WiFi.
-```
+```java
 public class WiFi implements Aplicativo {
     public void conectar() { ... }
     public void desconectar() { ... }
@@ -185,7 +185,7 @@ public class WiFi implements Aplicativo {
 ```
 ### Camera.java
 Implementa funcionalidades específicas da Camera.
-```
+```java
 public class Camera implements Aplicativo {
     public void tirarFoto() { ... }
     public void gravarVideo() { ... }
@@ -197,7 +197,7 @@ public class Camera implements Aplicativo {
 ```
 ### SMS.java
 Implementa funcionalidades específicas do SMS.
-```
+```java
 public class SMS implements Aplicativo {
     public void enviarMensagem() { ... }
     public void lerMensagem() { ... }
@@ -208,7 +208,7 @@ public class SMS implements Aplicativo {
 ```
 ### Fotos.java
 Implementa funcionalidades específicas do Fotos.
-```
+```java
 public class Fotos implements Aplicativo {
     public void visualizarFoto() { ... }
     public void deletarFoto() { ... }
@@ -221,16 +221,16 @@ public class Fotos implements Aplicativo {
 
 ## Instruções para Compilação e Execução
 ### 1. Clone o repositório
-```
+```bash
 git clone https://github.com/usuario/iphone-project.git
 cd iphone-project
 ```
 ### 2. Compile os arquivos Java
-```
+```bash
 javac src/*.java
 ```
 ### 3. Execute o programa principal
-```
+```bash
 java -cp src iPhone
 ```
 
